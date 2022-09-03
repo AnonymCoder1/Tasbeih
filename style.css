@@ -1,0 +1,79 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+@font-face {
+    src: url(digital-7.ttf);
+    font-family: digital-7;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        55deg,
+        hsl(240deg 100% 20%) 0%,
+        hsl(223deg 100% 29%) 11%,
+        hsl(216deg 100% 36%) 20%,
+        hsl(211deg 100% 41%) 26%,
+        hsl(204deg 100% 43%) 32%,
+        hsl(196deg 100% 42%) 41%,
+        hsl(182deg 100% 37%) 52%,
+        hsl(166deg 100% 41%) 66%,
+        hsl(150deg 100% 46%) 82%,
+        hsl(136deg 100% 50%) 100%
+      );
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    background-image:linear-gradient(31deg, #56ccd8, #add854);
+    box-shadow: 0px 0px 0  2px black;
+    transform: scale(3)
+}
+.container input{
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    font-size: 60px;
+    padding: 5px;
+    background: transparent;
+    border-color: black;
+    font-family: digital-7;
+    margin: 5px 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttons button {
+    margin: 1px 0;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.buttons button:active {
+    transform: scale(0.9)
+}
+span {
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 1px 1px 0 white;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid black;
+}
